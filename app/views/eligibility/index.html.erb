@@ -1,3 +1,90 @@
 <% content_for :title, @presenter.title %>
 
-<h1>Eligibility Page</h1>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <%= render "govuk_publishing_components/components/checkboxes", {
+        name: 'health',
+        heading: 'Health',
+        margin_bottom: true,
+        small: true,
+        items: [
+            {
+                label: 'Asthma',
+                value: 'asthma',
+            },
+            {
+                label: 'Chronic Obstructive Pulmonary Disease (COPD)',
+                value: 'chronic_obstructive_pulmonary_disease',
+            },
+            {
+                label: 'Deafness',
+                value: 'deafness',
+            },
+            {
+                label: 'Mesothelioma',
+                value: 'mesothelioma',
+            },
+            {
+                label: 'Pregnancy related illness',
+                value: 'pregnancy_related_illness',
+            },
+            {
+                label: 'Pneumoconiosis',
+                value: 'pneumoconiosis',
+            },
+            {
+                label: 'Prescribed Disease A11',
+                value: 'prescribed_disease_a11',
+            },
+            {
+                label: 'Terminally ill',
+                value: 'terminally_ill',
+            }
+        ]
+    } %>
+
+    <%= render "govuk_publishing_components/components/checkboxes", {
+        name: 'finance',
+        heading: 'Finance',
+        margin_bottom: true,
+        small: true,
+        items: [
+            {
+                label: 'Care to Learn',
+                value: 'care_to_learn',
+            },
+            {
+                label: 'Disability Living Allowance',
+                value: 'disability_living_allowance',
+            },
+            {
+                label: 'Employment and Support Allowance',
+                value: 'employment_and_support_allowance',
+            },
+            {
+                label: 'Industrial Injuries Disablement Benefit (IIDB)',
+                value: 'industrial_injuries_disablement_benefit',
+            },
+            {
+                label: 'Maternity Allowance',
+                value: 'maternity_allowance',
+            },
+            {
+                label: 'Professional and Career Development Loan',
+                value: 'professional_and_career_development_loan',
+            },
+            {
+                label: 'Statuatory Maternity Pay',
+                value: 'statuatory_maternity_pay',
+            },
+            {
+                label: 'Severe Disability Premium',
+                value: 'severe_disability_premium',
+            }
+        ]
+    } %>
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+
+  </div>
+</div>
